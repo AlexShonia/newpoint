@@ -50,7 +50,7 @@
       <link rel='stylesheet' id='et-line-font-css' href='wp-content/themes/prague/assets/css/et-line-font.css' type='text/css' media='all' />
       <style id='et-line-font-inline-css' type='text/css'>[data-icon]:before {content:none} .ui-dialog{position:fixed;top:100px;}</style>
       <link rel='stylesheet' id='prague-before-after-css' href='wp-content/themes/prague/assets/css/before-after.min.css' type='text/css' media='all' />
-      <link rel='stylesheet' id='bootstrap-css' href='wp-content/themes/prague/assets/css/bootstrap.min.css' type='text/css' media='all' />
+      <!-- <link rel='stylesheet' id='bootstrap-css' href='wp-content/themes/prague/assets/css/bootstrap.min.css' type='text/css' media='all' /> -->
       <link rel='stylesheet' id='prague-unit-test-css' href='wp-content/themes/prague/assets/css/unit-test.css' type='text/css' media='all' />
       <link rel='stylesheet' id='prague-theme-css-css' href='wp-content/themes/prague/assets/css/style.min.css' type='text/css' media='all' />
       <link rel='stylesheet' id='prague-dynamic-css-css' href='wp-admin/admin-ajax.php%3Faction=prague_dynamic_css&amp;ver=1.1.1.css' type='text/css' media='all' />
@@ -144,8 +144,9 @@
             <div class="vc_column-inner ">
                <div class="wpb_wrapper">
                   <section class="container-fluid top-banner no-padd  big fullheight light">
-                     <span class="overlay"></span>           <img width="1920" height="1080" style="width: 100%;" src="wp-content/uploads/2021/02/IMG_3579-123.jpg" class="s-img-switch"  alt="ნიუ პოინტის გუნდი">
-                     <div class="content">
+                     <span class="overlay"></span>           
+                     <img src="wp-content/uploads/2021/02/IMG_3579-123.jpg" class="s-img-switch"  alt="ნიუ პოინტის გუნდი">
+                     <div class="content" style="display: none;" id="main-overlay">
                         <div class="prague-svg-animation-text"></div>
                         <div class="subtitle">NEW POINT</div>
                         <h1 class="title">საამზომველო კომპანია</h1>
@@ -395,7 +396,7 @@
             </div>
          </div>
          <div class="vc_row-full-width vc_clearfix"></div>
-         <div class="vc_row wpb_row vc_row-fluid  margin-lg-0t margin-sm-20t">
+         <div class="vc_row wpb_row vc_row-fluid  margin-lg-0t margin-sm-20t" style="width: 70%; margin: auto;">
             <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-6 vc_col-md-offset-0 vc_col-md-6 vc_col-sm-offset-0 vc_col-xs-12 ">
                <div class="vc_column-inner ">
                   <div class="wpb_wrapper">
@@ -513,10 +514,28 @@
          var top  = ( window.innerHeight / 2 )-( h / 2 );
          return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=600, height=600, top='+top+', left='+left);
          }
-      </script> <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/311ff56f68798cb19b43dae14cd9e179.js%3Fver=9e179" id="qodeblock-dismiss-js-js"></script> <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/74b291b3cf37b23f6bbc2e80f0efe343.js%3Fver=fe343" id="swiper-js"></script> <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/4705b3053d3879f5001b2714eb780947.js%3Fver=80947" id="file-picker-js"></script> <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/fe0a32ccba7e2524b37c711dc7085f07.js%3Fver=85f07" id="isotope-js"></script> <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/e6a0f76242cbeb922283dcd255b921b9.js%3Fver=921b9" id="tweenMax-js"></script> <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/cf5e37bbf693548ebebbf4d377f86080.js%3Fver=86080" id="prague-vivus-js"></script> <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/8be846fd2a2c70f13661f6eea2b4d556.js%3Fver=4d556" id="slick-js"></script> <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/766583b5985c8c98b615847708482b5b.js%3Fver=82b5b" id="magnific-popup-js"></script> <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/9c3182fe9de80a4bdc304a5ed80b03ab.js%3Fver=b03ab" id="hammer-js"></script> <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/579c9a8cf7135d7d774c5286fbe9dffb.js%3Fver=9dffb" id="prague-foxlazy-js"></script> <script type="text/javascript" id="prague-theme-js-js-extra">/*  */
+      </script>
+       <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/311ff56f68798cb19b43dae14cd9e179.js%3Fver=9e179" id="qodeblock-dismiss-js-js"></script>
+       <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/74b291b3cf37b23f6bbc2e80f0efe343.js%3Fver=fe343" id="swiper-js"></script>
+       <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/4705b3053d3879f5001b2714eb780947.js%3Fver=80947" id="file-picker-js"></script>
+       <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/fe0a32ccba7e2524b37c711dc7085f07.js%3Fver=85f07" id="isotope-js"></script> 
+       <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/e6a0f76242cbeb922283dcd255b921b9.js%3Fver=921b9" id="tweenMax-js"></script>
+       <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/cf5e37bbf693548ebebbf4d377f86080.js%3Fver=86080" id="prague-vivus-js"></script> 
+       <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/8be846fd2a2c70f13661f6eea2b4d556.js%3Fver=4d556" id="slick-js"></script>
+       <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/766583b5985c8c98b615847708482b5b.js%3Fver=82b5b" id="magnific-popup-js"></script> 
+       <!-- this -->
+       <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/9c3182fe9de80a4bdc304a5ed80b03ab.js%3Fver=b03ab" id="hammer-js"></script> 
+       <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/579c9a8cf7135d7d774c5286fbe9dffb.js%3Fver=9dffb" id="prague-foxlazy-js"></script> 
+       <script type="text/javascript" id="prague-theme-js-js-extra">/*  */
          var enable_foxlazy = {"ajaxurl":"https:\/\/newpoint.ge\/wp-admin\/admin-ajax.php"};
          /*  */
-      </script> <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/58dcb43acc75276771b47c699af3bb52.js%3Fver=3bb52" id="prague-theme-js-js"></script> <script type="text/javascript" id="prague-theme-js-js-after">/*  */
+      </script>
+      <script> 
+      setTimeout(() => {
+         document.querySelector("#main-overlay").style.display = 'block'
+      }, 100)
+      </script>
+       <script data-optimized="1" type="text/javascript" src="wp-content/litespeed/js/58dcb43acc75276771b47c699af3bb52.js%3Fver=3bb52" id="prague-theme-js-js"></script> <script type="text/javascript" id="prague-theme-js-js-after">/*  */
          <!-- Facebook Pixel Code -->
          
          !function(f,b,e,v,n,t,s)

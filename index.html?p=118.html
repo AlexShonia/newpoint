@@ -1048,7 +1048,7 @@
                   class="s-img-switch"
                   alt=""
                 />
-                <div class="content">
+                <div class="content" style="display: none;" id="main-overlay">
                   <div class="prague-svg-animation-text"></div>
                   <h1 class="title">კონტაქტი</h1>
                 </div>
@@ -1558,6 +1558,11 @@
           );
         });
       })(jQuery);
+    </script>
+    <script> 
+    setTimeout(() => {
+        document.querySelector("#main-overlay").style.display = 'block'
+    }, 100)
     </script>
   </body>
 </html>

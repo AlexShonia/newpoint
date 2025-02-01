@@ -1061,7 +1061,7 @@
         decoding="async"
         data-lazy-src="https://newpoint.ge/wp-content/uploads/2018/01/shutterstock_1090801097-scaled.jpg"
       />
-      <div class="content">
+      <div class="content" style="display: none;" id="main-overlay">
         <div class="subtitle">SERVICE</div>
         <h1 class="title">ტოპოგრაფიული სერვისი</h1>
       </div>
@@ -1555,6 +1555,11 @@
           );
         });
       })(jQuery);
+    </script>
+    <script> 
+    setTimeout(() => {
+        document.querySelector("#main-overlay").style.display = 'block'
+    }, 100)
     </script>
   </body>
 </html>
